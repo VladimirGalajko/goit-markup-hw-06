@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -27,23 +28,23 @@
             >Web<span class="studio">Studio</span></a
           >
           <ul class="list list-header">
-            <li>
+            <li class="list-header-item">
               <a class="header-link link" href="./index.html">Studio</a>
             </li>
-            <li>
+            <li class="list-header-item">
               <a
                 class="header-link active-portfolio link"
                 href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li>
+            <li class="list-header-item">
               <a class="header-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
 
-        <address>
+        <address class="address">
           <ul class="list header-contacts-list">
             <li class="header-contacts-item">
               <a class="header-contacts link" href="mailto:info@devstudio.com"
@@ -57,6 +58,83 @@
             </li>
           </ul>
         </address>
+        <button class="open-menu-btn" type="button" data-menu-open>0</button>
+      </div>
+
+      <!-- MOB    visually-hidden   MODAL -->
+      <div class="mob-menu is-hidden" data-menu>
+        <!-- <button class="close-menu-btn" type="button">X</button> -->
+        <div>
+          <button type="button" class="modal-btn" data-menu-close>
+            <svg class="svg-btn-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
+          <ul class="list list-mob">
+            <li class="list-mob-item">
+              <a class="mob-link active-studio link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="list-mob-item">
+              <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="list-mob-item">
+              <a class="mob-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <address class="address-mob">
+            <ul class="list mob-contacts-list">
+              <li class="mob-contacts-item-tel">
+                <a class="mob-contacts-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-contacts-item-mail">
+                <a
+                  class="mob-contacts-mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="list mob-soc-list">
+            <li class="mob-soc-item">
+              <a href="" class="link mob-soc-link">
+                <svg class="icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="link mob-soc-link">
+                <svg class="icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="link mob-soc-link">
+                <svg class="icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="link mob-soc-link">
+                <svg class="icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -353,5 +431,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
