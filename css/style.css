@@ -222,13 +222,24 @@ span {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero-mob-x1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   padding: 112px 0;
   margin: auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-mob-x2.jpg);
+  }
 }
 
 .hero-title {
@@ -509,10 +520,17 @@ span {
 }
 .footer-con {
   display: flex;
+  flex-direction: column;
   align-items: baseline;
 }
+
 .f-logo-p {
-  margin-right: 120px;
+  display: block;
+  margin: 0 auto;
+}
+a.footer-logo.link {
+  display: flex;
+  justify-content: center;
 }
 .footer-text {
   font-weight: 400;
@@ -520,6 +538,9 @@ span {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color-f);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 .footer-text-soc {
   margin-bottom: 16px;
@@ -528,11 +549,17 @@ span {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--second-color);
+  text-align: center;
 }
 
 .footer-list {
   display: flex;
   gap: 16px;
+}
+.footer-list-link {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 .footer-item {
   display: flex;
@@ -860,9 +887,8 @@ p.madal-title {
 .footer-subscribe-btn:is(:hover, :focus) {
   background-color: #404bbf;
 }
-/* -----------------portfolio2 */
 .footer-subscribe {
-  margin-left: 80px;
+  margin: 0 auto;
 }
 .footer-subscribe-text {
   font-weight: 500;
@@ -871,16 +897,21 @@ p.madal-title {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-subscribe-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
 }
+
 .subscribe-iput {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   min-width: 264px;
+
   height: 40px;
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -896,7 +927,7 @@ p.madal-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 165px;
+  max-width: 165px;
   height: 40px;
   font-weight: 500;
   font-size: 16px;
@@ -908,6 +939,8 @@ p.madal-title {
   cursor: pointer;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .svg-footer-btn {
