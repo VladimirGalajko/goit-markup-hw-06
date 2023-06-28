@@ -58,7 +58,11 @@
             </li>
           </ul>
         </address>
-        <button class="open-menu-btn" type="button" data-menu-open>0</button>
+        <button class="open-menu-btn" type="button" data-menu-open>
+          <svg class="svg-btn-open" width="32" height="22">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
 
       <!-- MOB    visually-hidden   MODAL -->
@@ -73,12 +77,14 @@
 
           <ul class="list list-mob">
             <li class="list-mob-item">
-              <a class="mob-link active-studio link" href="./index.html"
-                >Studio</a
-              >
+              <a class="mob-link link" href="./index.html">Studio</a>
             </li>
             <li class="list-mob-item">
-              <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+              <a
+                class="mob-link modal-active-portfolio link"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="list-mob-item">
               <a class="mob-link link" href="">Contacts</a>

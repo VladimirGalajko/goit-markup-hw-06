@@ -49,6 +49,9 @@
         url(../images/hero-tab-x2.jpg);
     }
   }
+  .portfolio-link {
+    width: 350px;
+  }
   .container-studio {
     display: flex;
     gap: 72px 24px;
@@ -209,6 +212,9 @@
 
 /* WEB */
 @media screen and (min-width: 1158px) {
+  .portfolio-listbtn {
+    flex-wrap: nowrap;
+  }
   .header-navigation {
     width: 72px;
   }
