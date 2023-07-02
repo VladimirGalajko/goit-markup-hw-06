@@ -199,6 +199,9 @@
     font-style: normal;
     margin-left: auto;
   }
+  .container-studio {
+    padding-top: 96px;
+  }
   /*   NEXT SECTION FOOTER */
   .footer-con {
     display: flex;
