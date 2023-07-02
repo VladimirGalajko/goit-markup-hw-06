@@ -1,6 +1,11 @@
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 427px) {
   .whatdoes {
     display: none;
+  }
+  .modal {
+    width: 95%;
+    max-width: 372px;
+    overflow: scroll;
   }
 }
 @media screen and (min-width: 428px) {
@@ -11,6 +16,13 @@
   .whatdoes {
     display: none;
   }
+  .mob-soc-list {
+    display: flex;
+    gap: 56px;
+  }
+  .mob-contacts-item-tel {
+    font-size: 36px;
+  }
 }
 @media screen and (min-width: 428px) and (max-width: 767px) {
   .subscribe-iput {
@@ -19,6 +31,9 @@
 }
 /* TABLET */
 @media screen and (min-width: 768px) {
+  .modal {
+    padding: 72px 24px 24px 24px;
+  }
   .container {
     max-width: 738px;
   }
@@ -37,6 +52,9 @@
     padding: 112px 0;
     margin: auto;
   }
+  /* .header-contacts-item {
+    gap: 8px;
+  } */
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -52,10 +70,14 @@
   .portfolio-link {
     width: 350px;
   }
+
   .container-studio {
     display: flex;
     gap: 72px 24px;
     padding-bottom: 96px;
+  }
+  .studio {
+    padding: 0;
   }
   .studio-subtitle {
     text-align: unset;
@@ -141,9 +163,9 @@
 
   .header-contacts {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.48px;
     color: #434455;
     /* NEW */
     transition-property: color;
@@ -212,6 +234,9 @@
 
 /* WEB */
 @media screen and (min-width: 1158px) {
+  .modal {
+    padding: 72px 24px 24px 24px;
+  }
   .portfolio-listbtn {
     flex-wrap: nowrap;
   }
@@ -227,7 +252,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/hero-web-x1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -249,6 +274,9 @@
   }
   .whatdoes {
     display: unset;
+  }
+  .container-whatdoes {
+    padding-bottom: 120px;
   }
   .container {
     max-width: 1158px;
@@ -338,7 +366,9 @@
     /* padding: 24px 0; */
     margin: 0;
   }
-
+  .header-contacts-item {
+    margin-right: 40px;
+  }
   .active-studio::after {
     content: '';
     position: absolute;
@@ -449,7 +479,7 @@
 
     max-width: 264px;
     margin-bottom: 16px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
